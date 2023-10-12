@@ -1,0 +1,18 @@
+
+
+
+public class Sample{
+
+    public static void main(String[] args) {
+        JsonParser parser = new JsonParser();
+        final JsonElement element = parser.parse("{\"name\": \"flo\"}");
+        JsonObject object = element.getAsJsonObject();
+        String name = object.get("name").getAsString();
+        System.out.println(name);
+    }
+
+
+    public static String getNameFromJson(String json){
+
+    }
+}
